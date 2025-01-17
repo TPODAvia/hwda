@@ -7,6 +7,8 @@ GPIO.setup(29, GPIO.OUT, initial=GPIO.LOW) #red alarm led
 
 pip3 install RPi.bme280
 
+sudo apt update
+sudo apt install -y i2c-tools
 pi@raspberrypi:~/hwda/2 Second Project – Spying Eye $ i2cdetect -y 1
      0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
 00:                         -- -- -- -- -- -- -- -- 
