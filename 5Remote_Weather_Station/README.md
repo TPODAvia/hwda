@@ -1,3 +1,5 @@
+sudo journalctl -u mosquitto
+
 Write a step by step how to write app in Android Studio and raspberry to subscriibe to http and print out in GUI
 
 5) It’s time to take care of the Raspberry Pi OS application. But first, let’s make a mobile application in Android
