@@ -64,22 +64,22 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
             body = weather_forecast
 
         # LED strip color patterns
-        if 'FF0000' in body:
-            lightsOn('FF0000')
-        elif '00FF00' in body:
-            lightsOn('00FF00')
-        elif '0000FF' in body:
-            lightsOn('0000FF')
-        elif 'FFFF00' in body:
-            lightsOn('FFFF00')
-        elif 'FF00FF' in body:
-            lightsOn('FF00FF')
-        elif 'FFFFFF' in body:
-            lightsOn('FFFFFF')
-        elif '000000' in body:
-            lightsOn('000000')
-        elif 'random' in body:
-            lightsOn('random')
+        # if 'FF0000' in body:
+        #     lightsOn('FF0000')
+        # elif '00FF00' in body:
+        #     lightsOn('00FF00')
+        # elif '0000FF' in body:
+        #     lightsOn('0000FF')
+        # elif 'FFFF00' in body:
+        #     lightsOn('FFFF00')
+        # elif 'FF00FF' in body:
+        #     lightsOn('FF00FF')
+        # elif 'FFFFFF' in body:
+        #     lightsOn('FFFFFF')
+        # elif '000000' in body:
+        #     lightsOn('000000')
+        # elif 'random' in body:
+        #     lightsOn('random')
 
         response = BytesIO()
         response.write(bytes(body, "utf-8"))
@@ -87,7 +87,7 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
         print("Response:", response.getvalue())
 
 def run(server_class=HTTPServer, handler_class=SimpleHTTPRequestHandler):
-    server_address = ('127.0.0.1', 8000)  # <--- Localjost
+    server_address = ('0.0.0.0', 8000)  # <--- Localjost
     httpd = server_class(server_address, handler_class)
     try:
         print("Server running at http://localhost:8000/ ...")
