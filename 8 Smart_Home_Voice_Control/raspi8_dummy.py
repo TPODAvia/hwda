@@ -87,10 +87,10 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
         print("Response:", response.getvalue())
 
 def run(server_class=HTTPServer, handler_class=SimpleHTTPRequestHandler):
-    server_address = ('192.168.x.y', 8000)  # <--- Change IP and port
+    server_address = ('127.0.0.1', 8000)  # <--- Localjost
     httpd = server_class(server_address, handler_class)
     try:
-        print("Server running at http://192.168.x.y:8000/ ...")
+        print("Server running at http://localhost:8000/ ...")
         httpd.serve_forever()
     except KeyboardInterrupt:
         httpd.server_close()
