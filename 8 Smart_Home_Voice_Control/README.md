@@ -1,3 +1,7 @@
+How to pair real phone: https://www.youtube.com/watch?v=1cKPbAGzVNQ&ab_channel=CodexCreator
+
+ python3 raspi8_dummy.py
+
 Below is a detailed, step-by-step guide to creating the “Smart Home Voice Control” project. It covers both the Android application development in Android Studio (with voice recognition and TTS) and the Raspberry Pi server application (with the BME280/BMP280 sensor and an LED strip). You can follow these steps in order.
 
 ---
