@@ -4,7 +4,7 @@ import random
 import time
 
 # Configuration for NeoPixel
-num_pixels = 12  # Number of LEDs in the strip
+num_pixels = 8  # Number of LEDs in the strip
 pixel_pin = board.D18  # GPIO18
 ORDER = neopixel.GRB
 
@@ -33,12 +33,16 @@ def lightsOn(color):
 try:
     while True:
         # Cycle through a few colors
+        print("Red")
         lightsOn('FF0000')  # Red
         time.sleep(1)
+        print("Green")
         lightsOn('00FF00')  # Green
         time.sleep(1)
+        print("Blue")
         lightsOn('0000FF')  # Blue
         time.sleep(1)
+        print("Random color")
         lightsOn('random')  # Random color
         time.sleep(1)
 except KeyboardInterrupt:
