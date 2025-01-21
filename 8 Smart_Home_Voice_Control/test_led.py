@@ -1,52 +1,14 @@
-import neopixel
-import board
-import random
+import RPi.GPIO as GPIO
 import time
+# GPIO.setwarnings(False)
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(18, GPIO.OUT)
 
-# Configuration for NeoPixel
-num_pixels = 8  # Number of LEDs in the strip
-pixel_pin = board.D18  # GPIO18
-ORDER = neopixel.GRB
-
-# Initialize NeoPixel
-pixels = neopixel.NeoPixel(pixel_pin, num_pixels,
-                           brightness=0.1,
-                           auto_write=False,
-                           pixel_order=ORDER)
-
-def lightsOn(color):
-    """Set the NeoPixel to a specified color."""
-    global pixels
-    if color == "random":
-        r = random.randrange(256)
-        g = random.randrange(256)
-        b = random.randrange(256)
-    else:
-        # color is a hex string like 'FF0000'
-        r = int(color[0:2], 16)
-        g = int(color[2:4], 16)
-        b = int(color[4:6], 16)
-    pixels.fill((r, g, b))
-    pixels.show()
-
-# Test loop
 try:
     while True:
-        # Cycle through a few colors
-        print("Red")
-        lightsOn('FF0000')  # Red
+        GPIO.output(18, GPIO.HIGH)
         time.sleep(1)
-        print("Green")
-        lightsOn('00FF00')  # Green
-        time.sleep(1)
-        print("Blue")
-        lightsOn('0000FF')  # Blue
-        time.sleep(1)
-        print("Random color")
-        lightsOn('random')  # Random color
+        GPIO.output(18, GPIO.LOW)
         time.sleep(1)
 except KeyboardInterrupt:
-    # Turn off LEDs on exit
-    pixels.fill((0, 0, 0))
-    pixels.show()
-    print("Exiting and turning off LEDs.")
+    GPIO.cleanup()
