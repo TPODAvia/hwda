@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "580803193118",
+    "project_id": "yet-another-motion-detec-fef1e",
+    "storage_bucket": "yet-another-motion-detec-fef1e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:580803193118:android:aaf5540a6f0eedb6d4010f",
+        "android_client_info": {
+          "package_name": "com.example.myfire"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8wIYns0TrKS6nO52fMlY01rMRcfh0fdA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

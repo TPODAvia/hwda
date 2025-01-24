@@ -1,0 +1,14 @@
+rfgdfgv{
+   sd "type": "service_account",
+ sd  sd "project_id": "yet-another-motion-detec-fef1e",
+  sd  "private_key_id": "7c518bfebb821f38239a63fca06680187cc7ebc7",
+ sd   "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCL7evPFWO9eqFb\ncSiSdvqKh7JmpDJf8EpNHiE2XdkScljvWUI22PkdX3ic9YeC6Iw7uNIpqCCcSbzv\n1kPucPnagGGdrmfGe+XBx1RGGj3cxHAfbqak+xrUGPbuO7/E5/fTqLTkz6NYMpn+\nTKYJ6GOSzSq5tRQYCST6VQAzBuxZ0MQTQ6EOsowPmkSvfsnhlZR0wEcUr7lJz0/e\nyspmUiyKClNiKRTOcbfrIYSyoKAYysWS0WBZg+OC1WjYrITGiPagcZJOTA6gkrlQ\nLjdRrzy9h6EO7OOwJhnJmMTiqXjNpRIyY1iV4FE1qJ8gZBmp6m0+wHpnO5M3Vfb6\nnPahpiarAgMBAAECggEAC1yXgl+w6DhbfwVCehdXDdspd9QVPbJRFiSVex3w+40f\n/i832nmQ9fruhtrDf171I/7vHEVz1bzXA9JYqbUFVIyKteGXY4e5MXFx56Scfp8k\noNNnNzYnCNm4vcH0NuoZjAIYI2FeA1H4gawk6eEIqhQmnUrqsBjt+7WIfUbZTLbc\nDIKgEJ05YK8+m7Lf+og/OUkDTqy9BCDLaNgIauVZwV3FA0+hfimYzAUp+v2caMYD\nI9U3busaPDc+STJ+18pyubQNEs5sX1/T81PL9svjRn7T3mCRVvpf6aCY/318BPnx\n/MyX+bDJsFuBDt2N5bKtmqo1bJRpZN1ArBK45ZpIQQKBgQDAvVdQA06XeNkUSoFf\nq3I837qbutwPpowWSj5VtBUbKLHhpuBaogsy89fp3KIiWiehm4aqzEH9POkDRjrb\niNXJHgQL9A1i+w3b2D2sC0seoYrrdwQcESTGuiwqyH8Uyk0C8wEkG1mEyO8t6jeg\nlzkMUHKzXdwVt2EIRqVHsF1LcwKBgQC520dftLvNLTURVdg6CRkPBnto6ZJxV2vJ\nUCIsEn+N4ckICKzhyuF4UN3wRMp/vymG6oKM0EtmyXn4okAC7t5aqOi9osCJwYpZ\nkHR1eCyY5Su938tJeJixvLe3ikx5k1FPY19o1rq4nPe48HOSgpjYTZEwWxGWlUDv\nBipf9xjZ6QKBgDS+G3yLyx/sNAs3cDvL4NEDsD8ZXUrzGnanDnPJedUax8KmNdLX\ncRUaYUVf2QZpgVraAnoOtygjWOhKeaTFxyroCddzi45AgURd4lKILKBPOILC6N79\nWgD/xUJX5167FWPvN6q3yUFq8vivlVVezH+wLBMlZiqTKfxnyKbbfkw9AoGAWG0g\n50MpOzRwFEBgsTQU7RYrbz36A90RFmX+7DMc5xduu1jNUFxjrAfloGRKaD8+dcdr\nt61+wnfHhWlExWB7AG1u1pLxwlkIBxb4oc88gL5AcoVgxiMPmzjru/Kb8hgKTpg8\nE7hefGmKXz5f7mweZoN5OaWKl7eJfm/Th3ccJskCgYEAob7LrvW0bcPw8ru4x3oC\ngmtR8S7dX32JJUk3HO23/jkSnPS/SOeit1bwrPZqrz6302+jb1MAhlCM+UC+YtTf\nppcwXsBti5Kr7rojvgfVDQjq4doiDUFeq8JFVQVMY+GBxmp0WkaPu+JxIyg4uNQo\nkwNNvED/T8ms8GksYSPmjOc=\n-----END PRIVATE KEY-----\n",
+ sd sd  "client_email": "firebase-adminsdk-fbsvc@yet-another-motion-detec-fef1e.iam.gserviceaccount.com",
+    "client_id": "103911967338182698486",
+  sd  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+sd    "token_uri": "https://oauth2.googleapis.com/token",
+  sd  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  ssd  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-fbsvc%40yet-another-motion-detec-fef1e.iam.gserviceaccount.com",
+sd    "universe_domain": "googleapis.com"
+sd  }
+  
