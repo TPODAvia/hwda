@@ -1,3 +1,9 @@
+This is the final code:
+1) test_wifi_RGB.ino
+2) raspi4_work.py
+3) Run the Android app in real device
+
+
 Below is a concise, step-by-step guide describing how to create the “RGB LED Strip Controller” Android application in Android Studio. This guide combines all the details from your description: from installing Android Studio, to setting up the layout (activity_main.xml, styles.xml, colors.xml, etc.), adding required permissions and dependencies, and finally implementing the logic in MainActivity.java.
 
 ---
@@ -290,7 +296,7 @@ public class MainActivity extends AppCompatActivity {
     private OkHttpClient client;
 
     // Replace with your Arduino device IP address or domain
-    private static final String baseUrl = "http://192.168.1.7/"; //some_ip_address
+    private static final String baseUrl = "http://192.168.172.222/"; //some_ip_address
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

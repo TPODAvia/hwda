@@ -14,8 +14,10 @@
 char ssid[] = "Galaxy S10";      // Your network SSID
 char pass[] = "123456789";       // Your network password
 
+volatile bool stopRainbow = false;
+
 // ========== WS2812B SETTINGS ==========
-#define LED_PIN     6      // Digital pin on Arduino Due connected to the NeoPixel data line
+#define LED_PIN     5      // Digital pin on Arduino Due connected to the NeoPixel data line
 #define LED_COUNT   8      // Number of NeoPixels in the strip
 Adafruit_NeoPixel strip(LED_COUNT, LED_PIN, NEO_GRB + NEO_KHZ800);
 
@@ -225,14 +227,36 @@ void fillStrip(byte direction, uint32_t color, int waitTime, byte cycles) {
 // waitTime: delay (ms) between frames
 // cycles: how many times to cycle the rainbow
 void rainbow(byte direction, int waitTime, byte cycles) {
-  // A simple rainbow wheel
+  stopRainbow = false;  // reset any previous stop
+
   for (byte c = 0; c < cycles; c++) {
-    // Go through all colors in the wheel (0..255)
     for (int pos = 0; pos < 256; pos++) {
+      // Check if we must stop
+      if (stopRainbow) {
+        return;
+      }
+
+      // Optionally check for new clients
+      WiFiClient client = server.available();
+      if (client) {
+        // If you want to handle the request right here:
+        String request = client.readStringUntil('\r');
+        client.flush();
+
+        if (request.indexOf("GET /clear") != -1) {
+          stopRainbow = true;      // set flag
+          clearStrip();           // immediate effect
+          return;                 // break out
+        }
+        // else parse other requests similarly...
+
+        // Send response, etc.
+        client.stop();
+      }
+
+      // Now do the step for 'pos'
       for (int i = 0; i < LED_COUNT; i++) {
-        int colorIndex = (direction == 0)
-                         ? (i + pos) & 255
-                         : (i - pos) & 255;
+        int colorIndex = (direction == 0) ? (i + pos) & 255 : (i - pos) & 255;
         strip.setPixelColor(i, wheel(colorIndex));
       }
       strip.show();
