@@ -61,9 +61,9 @@ void loop() {
     }
 
     // Publish dummy data to MQTT
-    String payload = "{\"temperature\":\"" + String(temperature) + "\", \"humidity\":\"" +
-                     String(humidity) + "\", \"pressure\":\"" + String(pressure) +
-                     "\", \"light\":\"" + String(lightVal) + "\"}";
+    String payload = "{\"t\":\"" + String(temperature) + "\", \"h\":\"" +
+                     String(humidity) + "\", \"p\":\"" + String(pressure) +
+                     "\", \"l\":\"" + String(lightVal) + "\"}";
     mqttClient.publish(topic, payload.c_str());
     Serial.println("Published: " + payload);
 

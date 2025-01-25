@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     // Replace with your actual URL for reading the second channel's feed
     // e.g. "https://api.thingspeak.com/channels/<ch2ID>/feeds.json?api_key=<read_key>&results=1"
     private static final String THINGSPEAK_URL =
-            "https://api.thingspeak.com/channels/2285639/feeds.json?api_key=9KH02T33NWPOTZSW&results=1";
+            "https://api.thingspeak.com/channels/2813583/feeds.json?api_key=9KH02T33NWPOTZSW&results=2";
 
     private String response1;
     private RequestQueue queue;
