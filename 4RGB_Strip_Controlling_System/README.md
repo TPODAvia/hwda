@@ -296,7 +296,7 @@ public class MainActivity extends AppCompatActivity {
     private OkHttpClient client;
 
     // Replace with your Arduino device IP address or domain
-    private static final String baseUrl = "http://192.168.172.222/"; //some_ip_address
+    private static final String baseUrl = "http://192.168.68.222/"; //some_ip_address
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

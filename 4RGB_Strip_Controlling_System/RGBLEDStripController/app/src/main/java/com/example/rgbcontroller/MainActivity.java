@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
     private OkHttpClient client;
 
     // Replace with your Arduino or ESP IP address
-    private static final String baseUrl = "http://192.168.172.222";  // no trailing slash
+    private static final String baseUrl = "http://192.168.68.222";  // no trailing slash
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

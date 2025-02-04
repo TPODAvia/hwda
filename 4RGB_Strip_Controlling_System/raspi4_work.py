@@ -8,7 +8,7 @@ delay = 99
 forward = 1
 # color is stored as a string like "#RRGGBB"
 color = sg.rgb(255, 255, 255)
-ip = '192.168.172.222'  # ESP-01 IP address
+ip = '192.168.68.222'  # ESP-01 IP address
 port = 80               # ESP-01 web server port
 
 ################

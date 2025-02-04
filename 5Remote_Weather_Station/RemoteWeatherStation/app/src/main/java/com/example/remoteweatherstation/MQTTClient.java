@@ -15,7 +15,7 @@ public class MQTTClient implements MqttCallback {
     private static final String TAG = "MQTTClient";
 
     // Change to your Raspberry Pi or Mosquitto server IP/Port
-    public static final String MQTT_SERVER = "tcp://192.168.172.122:1883";
+    public static final String MQTT_SERVER = "tcp://192.168.68.122:1883";
 
     private static MQTTClient me;
     private Context ctx;

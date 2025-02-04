@@ -27,7 +27,7 @@ DHT dht(DHTPIN, DHTTYPE);
 Adafruit_BME280 bme; // I2C interface
 
 // MQTT server information
-IPAddress mqtt_server(192, 168, 172, 122); // your Raspberry MQTT server IP
+IPAddress mqtt_server(192, 168, 68, 122); // your Raspberry MQTT server IP
 const char *topic = "channel1";
 
 void setup() {

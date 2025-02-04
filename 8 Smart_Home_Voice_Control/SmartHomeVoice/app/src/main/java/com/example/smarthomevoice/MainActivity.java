@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     private TextToSpeech TTS;
     boolean ttsEnabled;
     private OkHttpClient client;
-    private static final String baseUrl = "http://192.168.172.122:8000/"; // Pi server IP & port
+    private static final String baseUrl = "http://192.168.68.122:8000/"; // Pi server IP & port
     String request2raspberry;
     String responsefromraspberry;
 
